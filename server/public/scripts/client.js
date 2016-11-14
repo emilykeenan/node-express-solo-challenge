@@ -60,6 +60,6 @@ function jokesToDom(jokes) {
     var $el = $("#jokeContainer").children().last();
     $el.append('<h3>' + jokes[i].whoseJoke + '</h3>');
     $el.append('<p>' + jokes[i].jokeQuestion + '</p>');
-    $el.append('<p>' + jokes[i].punchLine + '</p>')
+    $el.append('<p class="punch">' + jokes[i].punchLine + '</p>')
   }
 }

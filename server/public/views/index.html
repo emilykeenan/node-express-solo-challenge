@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Node Express Joke Book</title>
-    <script type="text/javascript" src="../vendor/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Node Express Joke Book</title>
+  <script type="text/javascript" src="../vendor/jquery.min.js"></script>
   <script type="text/javascript" src="../scripts/client.js"></script>
-  </head>
-  <body>
-    <h1>Node Express Joke Book</h1>
-    <form id="postJokeForm">
-      <label for="whoseJoke">Whose Joke? </label>
-      <input type="text" id="whoseJoke" name="whoseJoke" />
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash|Slabo+27px" rel="stylesheet">
+</head>
+<body>
+  <h1>Node Express Joke Book</h1>
+  <h2>Hover for the punchline!</h2>
+  <form id="postJokeForm">
+    <label for="whoseJoke">Whose Joke? </label>
+    <input type="text" id="whoseJoke" name="whoseJoke" />
 
-      <label for="jokeQuestion">Question: </label>
-      <input type="text" id="jokeQuestion" name="jokeQuestion" />
+    <label for="jokeQuestion">Question: </label>
+    <input type="text" id="jokeQuestion" name="jokeQuestion" />
 
-      <label for="punchLine">Punchline: </label>
-      <input type="text" id="punchLine" name="punchLine" />
+    <label for="punchLine">Punchline: </label>
+    <input type="text" id="punchLine" name="punchLine" />
 
-      <!-- <input type="submit" value="Add Song" /> -->
-      <button>Add Joke</button>
-    </form>
-    <div id="jokeContainer"></div>
-  </body>
+    <!-- <input type="submit" value="Add Song" /> -->
+    <button>Add Joke</button>
+  </form>
+  <div id="jokeContainer"></div>
+</body>
 </html>
