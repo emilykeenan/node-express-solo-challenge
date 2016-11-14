@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     //declaring empty joke object
     var newJoke = {};
-    
+
     $.each($('#postJokeForm').serializeArray(), function(i, field) {
       newJoke[field.name] = field.value;
     });
@@ -26,7 +26,7 @@ $(document).ready(function() {
       },
       error: function(error) {
         if(error.status == 400) {
-          alert("That wasn't a valid joke! Try again!");
+          alert("That was a bad joke! Try again!");
         }
       }
     })
