@@ -27,6 +27,15 @@ app.use(bodyParser.urlencoded({extended: true}));
 // routing modules
 var index = require('./routes/index');
 
+//post request for new jokes
+app.post('/jokes', function(req, res) {
+  // req.body is supplied by bodyParser above
+  console.log("REQ body: ", req.body);
+  var newJoke = req.body;
+  jokes.push(newJoke);
+  res.sendStatus(201);
+});
+
 // response to send jokes array to DOM
 app.get('/jokes', function(req, res) {
   res.send(jokes);
