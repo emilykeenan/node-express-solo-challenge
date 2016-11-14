@@ -23,13 +23,19 @@ h3 {
   font-size: 30px;
 }
 
+input {
+  display: block;
+  margin: 5px auto 15px auto;
+  width: 300px;
+}
+
 #header {
   padding: 20px;
 }
 
 #postJokeForm {
   font-family: 'Ravi Prakash', cursive;
-  width: 180px;
+  width: 400px;
   padding: 20px;
   margin: 0 auto;
   text-align: center;
