@@ -5,8 +5,10 @@ $(document).ready(function() {
 
   $("#postJokeForm").on("submit", function(event) {
     event.preventDefault();
+
     //declaring empty joke object
     var newJoke = {};
+    
     $.each($('#postJokeForm').serializeArray(), function(i, field) {
       newJoke[field.name] = field.value;
     });

@@ -32,8 +32,12 @@ app.post('/jokes', function(req, res) {
   // req.body is supplied by bodyParser above
   console.log("REQ body: ", req.body);
   var newJoke = req.body;
+  if(newJoke.whoseJoke == '' || newJoke.jokeQuestion == '' || newJoke.punchLine == '') {
+    res.sendStatus(400);
+  } else {
   jokes.push(newJoke);
   res.sendStatus(201);
+  }
 });
 
 // response to send jokes array to DOM
