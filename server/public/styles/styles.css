@@ -39,17 +39,18 @@ h3 {
 
 #jokeContainer {
   background-color: hsla(180, 59%, 51%, 0.3);
-  padding: 20px;
   margin: 0 auto;
   text-align: center;
 }
 
 .joke {
   border-bottom: 1px dotted black;
+  padding: 20px;
 }
 
 .punch {
   color: hsla(180, 59%, 51%, 0);
+  padding: 10px;
 }
 
 .punch:hover {
