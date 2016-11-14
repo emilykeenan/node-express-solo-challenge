@@ -21,8 +21,16 @@ var jokes = [
   }
 ];
 
+// puts post request body data and store it on req.body
+app.use(bodyParser.urlencoded({extended: true}));
+
 // routing modules
 var index = require('./routes/index');
+
+// response to send jokes array to DOM
+app.get('/jokes', function(req, res) {
+  res.send(jokes);
+});
 
 // static files
 app.use('/', index);
@@ -33,9 +41,4 @@ app.set('port', process.env.PORT || 4000);
 
 app.listen(app.get('port'), function() {
   console.log('The server is listening on port ' + app.get('port'));
-});
-
-// response to send jokes array to DOM
-app.get('/jokes', function(req, res) {
-  res.send(jokes);
 });
