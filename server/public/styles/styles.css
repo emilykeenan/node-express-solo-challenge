@@ -13,6 +13,7 @@ h1 {
 h2 {
   font-family: 'Ravi Prakash', cursive;
   text-align: center;
+  margin: 40px;
 }
 
 h3 {
@@ -23,7 +24,6 @@ h3 {
 
 #header {
   padding: 20px;
-  margin-bottom: 20px;
 }
 
 #postJokeForm {
