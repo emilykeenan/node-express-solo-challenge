@@ -20,13 +20,13 @@ var jokes = [
   }
 ];
 
-//post request for new jokes
+// post request for new jokes
 router.post('/', function(req, res) {
-  // req.body is supplied by bodyParser above
+// req.body is supplied by bodyParser above
   console.log("REQ body: ", req.body);
   var newJoke = req.body;
 
-  //checking to make sure joke input is not blank
+// checking to make sure joke input is not blank
   if(newJoke.whoseJoke == '' || newJoke.jokeQuestion == '' || newJoke.punchLine == '') {
     res.sendStatus(400);
   } else {

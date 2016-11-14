@@ -39,6 +39,7 @@ $(document).ready(function() {
 
 }); // end doc ready
 
+// get request to get jokes from /jokes route
 function getJokes() {
   $.ajax({
     type: 'GET',
@@ -50,6 +51,7 @@ function getJokes() {
   });
 }
 
+// function to add jokes to DOM
 function jokesToDom(jokes) {
   $("#jokeContainer").empty();
 
