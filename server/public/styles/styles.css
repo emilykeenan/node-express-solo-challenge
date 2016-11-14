@@ -8,12 +8,13 @@ body {
 h1 {
   font-family: 'Ravi Prakash', cursive;
   text-align: center;
+  font-size: 60px;
 }
 
 h2 {
-  font-family: 'Ravi Prakash', cursive;
   text-align: center;
   margin: 40px;
+  font-size: 20px;
 }
 
 h3 {
